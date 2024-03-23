@@ -51,7 +51,7 @@ const App = () => {
     return (
         <>
             <nav className={styles.navBar}>
-                <h1>Star Wars Api</h1>
+                <a href="/">Star Wars Api</a>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="category">
                         Search for:
