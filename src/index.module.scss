@@ -1,3 +1,8 @@
+body {
+    background-image: url("https://teamsbackground.net/wp-content/uploads/2020/04/star-wars-backgrounds-14.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .navBar {
     display: flex;
     flex-direction: row;
@@ -14,7 +19,17 @@
         font-size: 1.5rem;
         font-weight: 600;
     }
-
+    a {
+        font-size: x-large;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+        transition: transform 0.3s ease-in-out;
+    }
+    a:hover {
+        transform: scale(1.1);
+    }
     form {
         display: flex;
         flex-direction: row;
