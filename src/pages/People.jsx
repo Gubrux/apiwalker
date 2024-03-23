@@ -1,8 +1,8 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
-import ShowData from '../components/ShowData';
-import styles from '../index.module.scss';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ShowData from "../components/ShowData";
+import styles from "../index.module.scss";
 
 const People = () => {
     const { id } = useParams();
@@ -14,10 +14,15 @@ const People = () => {
             console.log(id);
             try {
                 setLoading(true);
-                const res = await axios.get(`https://swapi.dev/api/people/${id}`);
+                const res = await axios.get(
+                    `https://swapi.dev/api/people/${id}`
+                );
                 console.log(res);
                 const homeworldRes = await axios.get(res.data.homeworld);
-                setDataState({ ...res.data, homeworld: homeworldRes.data.name });
+                setDataState({
+                    ...res.data,
+                    homeworld: homeworldRes.data.name,
+                });
             } catch (err) {
                 setDataState(null);
                 console.log(err.message);
@@ -25,7 +30,7 @@ const People = () => {
                 setLoading(false);
                 console.log(dataState);
             }
-        }
+        };
         fetchData();
     }, [id]);
 
@@ -33,7 +38,7 @@ const People = () => {
         <div className={styles.container}>
             <ShowData category="people" loading={loading} data={dataState} />
         </div>
-    )
-}
+    );
+};
 
-export default People
+export default People;
