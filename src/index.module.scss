@@ -9,7 +9,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background-color: #f0f0f0;
+    background-color: #000000;
     width: 90%;
     height: 20px;
     margin: 0 auto;
@@ -23,7 +23,7 @@ body {
         font-size: x-large;
         font-weight: 600;
         text-decoration: none;
-        color: black;
+        color: rgb(251, 255, 13);
         text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
         transition: transform 0.3s ease-in-out;
     }
