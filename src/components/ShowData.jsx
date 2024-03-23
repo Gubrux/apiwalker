@@ -20,7 +20,7 @@ const ShowData = ({ category, loading, data }) => {
 
         return (
             <div className="information">
-                <h2>Show Character</h2>
+                <h2>Character:</h2>
                 <h3>{name}</h3>
                 <p>Height: {height}</p>
                 <p>Hair Color: {hair_color}</p>
@@ -34,7 +34,7 @@ const ShowData = ({ category, loading, data }) => {
 
         return (
             <div>
-                <h2>Show Planets</h2>
+                <h2>Planet:</h2>
                 <h2>{name}</h2>
                 <p>Rotation Period: {rotation_period}</p>
                 <p>Orbital Period: {orbital_period}</p>
@@ -54,7 +54,7 @@ const ShowData = ({ category, loading, data }) => {
 
         return (
             <div>
-                <h2>Show Films</h2>
+                <h2>Films:</h2>
                 <h3>{title}</h3>
                 <p>Episode: {episode_id}</p>
                 <p>Opening Crawl: {opening_crawl}</p>
@@ -74,7 +74,7 @@ const ShowData = ({ category, loading, data }) => {
 
         return (
             <div>
-                <h2>Show Species</h2>
+                <h2>Species:</h2>
                 <h2>{name}</h2>
                 <p>Classification: {classification}</p>
                 <p>Designation: {designation}</p>
@@ -99,7 +99,7 @@ const ShowData = ({ category, loading, data }) => {
 
         return (
             <div>
-                <h2>Show Vehicles</h2>
+                <h2>Vehicles:</h2>
                 <h3>{name}</h3>
                 <p>Model: {model}</p>
                 <p>Manufacturer: {manufacturer}</p>
@@ -129,7 +129,7 @@ const ShowData = ({ category, loading, data }) => {
 
         return (
             <div>
-                <h2>Show Starships</h2>
+                <h2>Spaceships:</h2>
                 <h3>{name}</h3>
                 <p>Model: {model}</p>
                 <p>Manufacturer: {manufacturer}</p>
